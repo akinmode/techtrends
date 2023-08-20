@@ -1,0 +1,55 @@
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.180:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.1.180 - - [17/Aug/2023 20:56:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.180 - - [17/Aug/2023 20:56:10] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug:192.168.1.180 - - [17/Aug/2023 20:56:22] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.180 - - [17/Aug/2023 20:56:22] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:About Us page retrieved!
+INFO:werkzeug:192.168.1.180 - - [17/Aug/2023 20:56:34] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.180 - - [17/Aug/2023 20:56:34] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.180 - - [17/Aug/2023 20:56:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.180 - - [17/Aug/2023 20:56:43] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.180 - - [17/Aug/2023 20:56:54] "GET /metrics HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.180:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2023 23:46:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2023 23:46:12] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2023 23:46:15] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2023 23:46:15] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2023 23:46:24] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2023 23:46:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2023 23:46:28] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2023 23:46:30] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2023 23:46:30] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /create [POST]
+Traceback (most recent call last):
+  File "Z:\DataScience Dock\Swift DevOps-Java\CloudNative\nd064_course_1\.projenv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "Z:\DataScience Dock\Swift DevOps-Java\CloudNative\nd064_course_1\.projenv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "Z:\DataScience Dock\Swift DevOps-Java\CloudNative\nd064_course_1\.projenv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "Z:\DataScience Dock\Swift DevOps-Java\CloudNative\nd064_course_1\.projenv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 76, in create
+    connection.commit()
+AttributeError: 'sqlite3.Cursor' object has no attribute 'commit'
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2023 23:46:52] "[35m[1mPOST /create HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.180:3111/ (Press CTRL+C to quit)
+INFO:app:About Us page retrieved!
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2023 23:49:20] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2023 23:49:20] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2023 23:49:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2023 23:49:28] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2023 23:49:30] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2023 23:49:31] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:New article created: "Tesla"
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2023 23:49:52] "[32mPOST /create HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2023 23:49:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2023 23:49:52] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2023 23:50:09] "GET /metrics HTTP/1.1" 200 -
